@@ -1,0 +1,57 @@
+.Skills {
+  background-color: #fff;
+  border-radius: 1.333rem;
+  padding: 1.375em;
+
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.374em;
+    text-transform: uppercase;
+    color: #4f4f4f;
+
+    margin-bottom: 1rem;
+  }
+
+  ul.title {
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      p {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25em;
+        color: #4f4f4f;
+      }
+
+      .border {
+        width: 14em;
+        height: 0.6em;
+        background: #c4c4c4;
+        border-radius: 1.333em;
+
+        .fill {
+          background-color: #2f80ed;
+          height: 100%;
+          border-radius: 1.333em;
+        }
+
+        .newbie {
+          width: 60%;
+        }
+
+        .medium {
+          width: 80%;
+        }
+
+        .high {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

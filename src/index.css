@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
   box-sizing: border-box;
 }
 
@@ -77,6 +78,54 @@ body {
 .Header p:nth-child(4) {
   grid-column: 2;
   grid-row: 3;
+}
+
+.Skills {
+  background-color: #fff;
+  border-radius: 1.333rem;
+  padding: 1.375em;
+}
+.Skills h2 {
+  font-size: 1.125rem;
+  line-height: 1.374em;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  margin-bottom: 1rem;
+}
+.Skills ul.title {
+  list-style: none;
+}
+.Skills ul.title li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.Skills ul.title li p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25em;
+  color: #4f4f4f;
+}
+.Skills ul.title li .border {
+  width: 14em;
+  height: 0.6em;
+  background: #c4c4c4;
+  border-radius: 1.333em;
+}
+.Skills ul.title li .border .fill {
+  background-color: #2f80ed;
+  height: 100%;
+  border-radius: 1.333em;
+}
+.Skills ul.title li .border .newbie {
+  width: 60%;
+}
+.Skills ul.title li .border .medium {
+  width: 80%;
+}
+.Skills ul.title li .border .high {
+  width: 90%;
 }
 
 /*# sourceMappingURL=index.css.map */
