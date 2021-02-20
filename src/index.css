@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.Header {
+  margin-top: 3.888em;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.3em 1.5em;
+  display: grid;
+  grid-template-columns: 2.5fr 9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 1.833em;
+}
+.Header img {
+  grid-row: 1/4;
+  grid-column: 1;
+  width: 100%;
+  border-radius: 0.75em;
+}
+.Header .about {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.Header .about .tag-name h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.208em;
+  color: #4f4f4f;
+}
+.Header .about .tag-name p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #828282;
+}
+.Header .about .contact ul {
+  font-size: 1.125rem;
+  list-style: none;
+  color: #4f4f4f;
+}
+.Header .about .contact ul li {
+  line-height: 1.222em;
+}
+.Header .about .contact ul li span {
+  vertical-align: middle;
+  margin-right: 0.75em;
+}
+.Header p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.222em;
+  color: #828282;
+}
+.Header p:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.Header p:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/*# sourceMappingURL=index.css.map */
