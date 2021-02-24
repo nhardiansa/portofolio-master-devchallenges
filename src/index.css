@@ -13,6 +13,42 @@ body {
 .container {
   width: 75%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2.5em;
+}
+.container .Header {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.container .Skills {
+  grid-column: 1;
+  grid-row: 2;
+}
+.container .Blog {
+  grid-column: 2;
+  grid-row: 2/4;
+}
+.container .Hobbies {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 3/5;
+}
+.container .Experiences {
+  background-color: red;
+  grid-column: 2;
+  grid-row: 4;
+}
+.container .Projects {
+  background-color: blue;
+  grid-column: 1/3;
+  grid-row: 5;
+}
+.container .Experiences,
+.container .Hobbies,
+.container .Projects {
+  width: 100%;
 }
 
 .Header {
@@ -126,6 +162,48 @@ body {
 }
 .Skills ul.title li .border .high {
   width: 90%;
+}
+
+.Blog {
+  background-color: #fff;
+  border-radius: 0.75em;
+  padding-left: 1.25em;
+  padding-block: 1.8em;
+}
+.Blog h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.25em;
+}
+.Blog h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333333;
+  line-height: 1.8em;
+}
+.Blog img {
+  width: 100%;
+  border-radius: 0.75em 0 0 0.75em;
+}
+.Blog p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #828282;
+  line-height: 1.25em;
+  width: 90%;
+}
+.Blog p:nth-child(5) {
+  margin-top: 1.5em;
+}
+.Blog a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2f80ed;
+  line-height: 1.25em;
+  text-decoration: none;
+  margin-top: 4em;
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

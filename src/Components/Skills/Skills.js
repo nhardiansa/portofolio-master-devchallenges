@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 
 class Skills extends Component{
+    
+    constructor(props){
+        super(props)
+    }
+    
     render(){
         return(
-            <div className="Skills">
+            <div className={this.props.className}>
                 <h2>Front End</h2>
                 <ul className="title">
                     <li>

@@ -2,9 +2,14 @@ import React, { Component } from 'react'
 import foto from "./assets/foto.jpg"
 
 class Header extends Component{
+
+    constructor(props){
+        super(props)
+    }
+
     render(){
         return (
-            <div className="Header">
+            <div className={this.props.className}>
                 <img src={foto} alt=""/>
 
                 <div className="about">

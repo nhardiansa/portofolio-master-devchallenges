@@ -13,4 +13,48 @@ body {
 .container {
   width: 75%;
   margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2.5em;
+
+  .Header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .Skills {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .Blog {
+    grid-column: 2;
+    grid-row: 2 / 4;
+  }
+
+  .Hobbies {
+    background-color: green;
+    grid-column: 1;
+    grid-row: 3 / 5;
+  }
+
+  .Experiences {
+    background-color: red;
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .Projects {
+    background-color: blue;
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+
+  .Experiences,
+  .Hobbies,
+  .Projects {
+    width: 100%;
+  }
 }
