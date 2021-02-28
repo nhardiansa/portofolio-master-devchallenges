@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #c7c7c7;
 }
 
 .container {
@@ -31,12 +31,10 @@ body {
   grid-row: 2/4;
 }
 .container .Hobbies {
-  background-color: green;
   grid-column: 1;
   grid-row: 3/5;
 }
 .container .Experiences {
-  background-color: red;
   grid-column: 2;
   grid-row: 4;
 }
@@ -165,6 +163,8 @@ body {
 }
 
 .Blog {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 0.75em;
   padding-left: 1.25em;
@@ -176,13 +176,21 @@ body {
   color: #e0e0e0;
   line-height: 1.25em;
 }
-.Blog h3 {
+.Blog .thumbnail {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2.5rem;
+}
+.Blog .thumbnail h3 {
+  grid-column: 1;
   font-weight: 500;
   font-size: 1.5rem;
   color: #333333;
   line-height: 1.8em;
 }
-.Blog img {
+.Blog .thumbnail img {
+  grid-column: 2;
   width: 100%;
   border-radius: 0.75em 0 0 0.75em;
 }
@@ -192,6 +200,7 @@ body {
   color: #828282;
   line-height: 1.25em;
   width: 90%;
+  margin-top: 3rem;
 }
 .Blog p:nth-child(5) {
   margin-top: 1.5em;
@@ -202,8 +211,87 @@ body {
   color: #2f80ed;
   line-height: 1.25em;
   text-decoration: none;
-  margin-top: 4em;
+  margin-top: auto;
   display: block;
+}
+
+.Hobbies {
+  border-radius: 0.75rem;
+  background-color: #fff;
+  padding: 1.25rem;
+}
+.Hobbies h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #4f4f4f;
+  line-height: 1.25em;
+}
+.Hobbies .hobbie {
+  margin-top: 1.75rem;
+}
+.Hobbies .hobbie img {
+  width: 20rem;
+  border-radius: 0.75rem;
+}
+.Hobbies .hobbie h3 {
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #333333;
+  line-height: 1.25em;
+  margin-top: 1.5rem;
+}
+.Hobbies .hobbie p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #828282;
+  line-height: 1.25em;
+  margin-top: 1rem;
+}
+
+.Experiences {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+}
+.Experiences h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #4f4f4f;
+  line-height: 1.25em;
+}
+.Experiences .experience {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 5.5fr;
+  align-items: center;
+  justify-content: center;
+}
+.Experiences .experience img {
+  width: 80%;
+  grid-column: 1;
+}
+.Experiences .experience .desc {
+  grid-column: 2;
+}
+.Experiences .experience .desc h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+}
+.Experiences .experience .desc p:nth-child(1) {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #828282;
+  line-height: 1.25em;
+}
+.Experiences .experience .desc p:nth-child(3) {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #828282;
+  line-height: 1.25em;
 }
 
 /*# sourceMappingURL=index.css.map */

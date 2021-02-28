@@ -1,0 +1,44 @@
+@use "../Blog/Blog" as b;
+
+.Experiences {
+  background-color: #fff;
+  border-radius: 0.75rem;
+
+  padding: 1rem 2rem;
+
+  h2 {
+    @include b.font(#4f4f4f, 1.25rem);
+  }
+
+  .experience {
+    margin-top: 2rem;
+    // margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 5.5fr;
+    align-items: center;
+    justify-content: center;
+    // column-gap: 0rem;
+
+    img {
+      width: 80%;
+      grid-column: 1;
+    }
+
+    .desc {
+      grid-column: 2;
+
+      h3 {
+        @include b.font(#000000, 1rem, 1.25rem, 600);
+        margin-top: 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      p:nth-child(1) {
+        @include b.font(#828282, 0.75rem);
+      }
+      p:nth-child(3) {
+        @include b.font(#828282, 1rem);
+      }
+    }
+  }
+}

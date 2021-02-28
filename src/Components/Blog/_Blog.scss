@@ -1,32 +1,47 @@
+@mixin font($color, $size: 1rem, $lineHeight: 1.25em, $weight: 500) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $lineHeight;
+}
+
 .Blog {
+  display: flex;
+  flex-direction: column;
+
   background-color: #fff;
   border-radius: 0.75em;
   padding-left: 1.25em;
   padding-block: 1.8em;
 
-  @mixin font($color, $size: 1rem, $lineHeight: 1.25em, $weight: 500) {
-    font-weight: $weight;
-    font-size: $size;
-    color: $color;
-    line-height: $lineHeight;
-  }
-
   h2 {
     @include font(#e0e0e0);
   }
 
-  h3 {
-    @include font(#333333, 1.5rem, 1.8em);
-  }
+  .thumbnail {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.5rem;
 
-  img {
-    width: 100%;
-    border-radius: 0.75em 0 0 0.75em;
+    h3 {
+      grid-column: 1;
+      @include font(#333333, 1.5rem, 1.8em);
+    }
+
+    img {
+      grid-column: 2;
+      width: 100%;
+      border-radius: 0.75em 0 0 0.75em;
+      // height: 100%;
+    }
   }
 
   p {
     @include font(#828282);
     width: 90%;
+
+    margin-top: 3rem;
   }
 
   p:nth-child(5) {
@@ -34,9 +49,10 @@
   }
 
   a {
+    // margin-bottom: auto;
     @include font(#2f80ed);
     text-decoration: none;
-    margin-top: 4em;
+    margin-top: auto;
     display: block;
   }
 }
