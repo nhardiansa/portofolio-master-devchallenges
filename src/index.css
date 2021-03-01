@@ -15,7 +15,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
   grid-gap: 2.5em;
 }
 .container .Header {
@@ -39,7 +39,6 @@ body {
   grid-row: 4;
 }
 .container .Projects {
-  background-color: blue;
   grid-column: 1/3;
   grid-row: 5;
 }
@@ -292,6 +291,108 @@ body {
   font-size: 1rem;
   color: #828282;
   line-height: 1.25em;
+}
+
+.Projects .navigation {
+  grid-column: 1/4;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1.375rem;
+}
+.Projects .navigation h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4f4f4f;
+  line-height: 1.25em;
+}
+.Projects .navigation button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: 1px solid #4f4f4f;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  padding: 0.5em 1.5em;
+  background-color: #fff;
+  cursor: pointer;
+}
+.Projects .navigation button.hover {
+  color: #fff;
+  border: 1px solid #2f80ed;
+  background-color: #2f80ed;
+}
+.Projects .cards {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+.Projects .cards .card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.Projects .cards .card img {
+  width: 18.25rem;
+  height: 13.5rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+.Projects .cards .card ul {
+  margin-top: 1.5rem;
+  display: flex;
+  list-style: none;
+}
+.Projects .cards .card ul li {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4f4f4f;
+  line-height: 1.25em;
+  margin-right: 0.5rem;
+}
+.Projects .cards .card h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333333;
+  line-height: 1.25em;
+  margin-top: 1.25rem;
+}
+.Projects .cards .card p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #828282;
+  line-height: 1.25em;
+  width: 90%;
+}
+.Projects .cards .card button {
+  background-color: #fff;
+  margin-top: 2.5rem;
+  margin-right: 0.75rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid #2f80ed;
+  cursor: pointer;
+  color: #2f80ed;
+}
+.Projects .cards .card button:nth-child(5) {
+  background-color: #2f80ed;
+  color: #ffffff;
+}
+.Projects ul.pages {
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+  width: 100%;
+}
+.Projects ul.pages li {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #4f4f4f;
+  line-height: 1.25em;
+  border: 1px solid #4f4f4f;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.6rem;
+  margin-left: 0.75rem;
 }
 
 /*# sourceMappingURL=index.css.map */

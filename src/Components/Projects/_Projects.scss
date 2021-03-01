@@ -1,0 +1,108 @@
+@use "../Blog/Blog" as b;
+
+.Projects {
+  //   background-color: #fff;
+  //   border-radius: 0.75rem;
+
+  .navigation {
+    grid-column: 1 / 4;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    padding: 1.375rem;
+
+    h2 {
+      @include b.font(#4f4f4f);
+    }
+
+    button {
+      margin-top: 1rem;
+      margin-right: 1rem;
+      border: 1px solid #4f4f4f;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      padding: 0.5em 1.5em;
+      background-color: #fff;
+
+      cursor: pointer;
+    }
+
+    button.hover {
+      color: #fff;
+      border: 1px solid #2f80ed;
+      background-color: #2f80ed;
+    }
+  }
+
+  .cards {
+    margin-top: 2.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+
+    .card {
+      background-color: #fff;
+      border-radius: 0.75rem;
+      padding: 1rem 1rem 2rem 1rem;
+
+      img {
+        width: 18.25rem;
+        height: 13.5rem;
+        object-fit: cover;
+        border-radius: 0.75rem;
+      }
+
+      ul {
+        margin-top: 1.5rem;
+        display: flex;
+        list-style: none;
+
+        li {
+          @include b.font(#4f4f4f);
+          margin-right: 0.5rem;
+        }
+      }
+
+      h3 {
+        @include b.font(#333333, 1.5rem);
+        margin-top: 1.25rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        @include b.font(#828282);
+        width: 90%;
+      }
+
+      button {
+        background-color: #fff;
+        margin-top: 2.5rem;
+        margin-right: 0.75rem;
+        border-radius: 0.75rem;
+        padding: 0.75rem 2.5rem;
+        border: 1px solid #2f80ed;
+        cursor: pointer;
+        color: #2f80ed;
+      }
+
+      button:nth-child(5) {
+        background-color: #2f80ed;
+        color: #ffffff;
+      }
+    }
+  }
+
+  ul.pages {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    width: 100%;
+
+    li {
+      @include b.font(#4f4f4f, 0.75rem);
+      border: 1px solid #4f4f4f;
+      border-radius: 0.25rem;
+      padding: 0.5rem 0.6rem;
+      margin-left: 0.75rem;
+    }
+  }
+}
