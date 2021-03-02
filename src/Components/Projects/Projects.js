@@ -6,22 +6,36 @@ import gambar3 from "./assets/3.jpg"
 class Projects extends Component{
     constructor(props){
         super(props);
-        this.state = { class : '' }
+        this.state = { isHover : false };
     }
 
-    // ketikaKlik(){
-    //     console.log();
-        
-    // }
+    inHover = (e) => {
+        e. preventDefault()
+        if(e.target.className === ''){
+            e.target.className = 'hover'
+            console.log(e.target.className)
+        }
+    }
+
+    unHover = (e) => {
+        e. preventDefault()
+        if(e.target.className !== ''){
+            e.target.className = ''
+            console.log(e.target.className)
+        }
+    }
+    
 
     render(){
+        let react = this.state.isHover
+
         return(
             <div className={this.props.className} >
                 <div className="navigation">
                     <h2>Projects (3)</h2>
-                    <button>React</button>
-                    <button >Vue</button>
-                    <button >Responsive</button>
+                    <button onMouseOver={ this.inHover } onMouseLeave={ this.unHover } >React</button>
+                    <button onMouseOver={ this.inHover } onMouseLeave={ this.unHover } >Vue</button>
+                    <button onMouseOver={ this.inHover } onMouseLeave={ this.unHover } >Responsive</button>
                 </div>
                 <div className="cards">
                     <div className="card">

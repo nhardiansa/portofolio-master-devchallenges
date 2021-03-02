@@ -5,6 +5,7 @@
   //   border-radius: 0.75rem;
 
   .navigation {
+    box-shadow: 0px 9px 10px -4px rgba(128, 128, 128, 1);
     grid-column: 1 / 4;
     background-color: #fff;
     border-radius: 0.75rem;
@@ -22,6 +23,7 @@
       font-size: 0.875rem;
       padding: 0.5em 1.5em;
       background-color: #fff;
+      transition: 200ms ease-in-out;
 
       cursor: pointer;
     }
@@ -34,12 +36,14 @@
   }
 
   .cards {
+    width: 100%;
     margin-top: 2.25rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 1rem;
 
     .card {
+      box-shadow: 0px 9px 10px -4px rgba(128, 128, 128, 1);
       background-color: #fff;
       border-radius: 0.75rem;
       padding: 1rem 1rem 2rem 1rem;
@@ -92,16 +96,17 @@
   }
 
   ul.pages {
+    margin-top: 2.25rem;
     list-style: none;
     display: flex;
-    margin-right: auto;
+    justify-content: flex-end;
     width: 100%;
 
     li {
       @include b.font(#4f4f4f, 0.75rem);
       border: 1px solid #4f4f4f;
       border-radius: 0.25rem;
-      padding: 0.5rem 0.6rem;
+      padding: 0.6rem 0.9rem 0.6rem 0.8rem;
       margin-left: 0.75rem;
     }
   }

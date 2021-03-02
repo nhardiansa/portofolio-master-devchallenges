@@ -17,6 +17,9 @@ class App extends Component{
         <Experiences className="Experiences" />
         <Hobbies className="Hobbies" />
         <Projects className="Projects" />
+        <div className="footer">
+          <p>created by <b>Nabil Hardiansa</b> - devChallenges.io</p>
+        </div>
       </div>
     )
   }
